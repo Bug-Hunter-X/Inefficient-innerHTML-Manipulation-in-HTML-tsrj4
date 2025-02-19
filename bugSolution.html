@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Efficient way to access and append to element
+    const newParagraph = document.createElement("p");
+    newParagraph.textContent = "Added paragraph";
+    document.getElementById("myDiv").appendChild(newParagraph);
+  </script>
+</body>
+</html>
